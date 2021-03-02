@@ -3,7 +3,8 @@ This is the test asignment giver by Sunrise Studio Pro (www.sunrisestudio.pro) f
 
 ### Find the live-demo of the project:  https://mini-estore.herokuapp.com/
 
-Superuser cridentials for testing: 
+Superuser cridentials for testing:
+
   Username: Shmas
   Password: 1234
 
@@ -34,7 +35,9 @@ python manage.py runserver
 ```
 5. now, go to you browser and enter localhost in the search field
 
-Please contact me if any clarification is needed 
+Please contact me if any clarification is needed
+```bash
 Email: ismatov_s@auca.kg,
 Phone number: +996 555 126012 (WhatsApp, Telegram)
+```bash
 
