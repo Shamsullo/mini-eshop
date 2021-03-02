@@ -85,17 +85,16 @@ WSGI_APPLICATION = 'mini_shop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
- DATABASES = {
-     'default': {
-         'ENGINE': 'django.db.backends.postgresql',
-         'NAME': 'dbfrcg93g8kaj',
-         'USER': 'xonjrkunkpxsyg',
-         'PASSWORD': '9f55a99206d66fca56f54d16ecbdda6c63557e03250f6eadced3a4c505e7ef57',
-         'HOST': 'postgres://xonjrkunkpxsyg:9f55a99206d66fca56f54d16ecbdda6c63557e03250f6eadced3a4c505e7ef57@ec2-18-211-97-89.compute-1.amazonaws.com:5432/dbfrcg93g8kaj
-',
-         'PORT': '5432',
-     }
- }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dbfrcg93g8kaj',
+        'USER': 'xonjrkunkpxsyg',
+        'PASSWORD': '9f55a99206d66fca56f54d16ecbdda6c63557e03250f6eadced3a4c505e7ef57',
+        'HOST': 'postgres://xonjrkunkpxsyg:9f55a99206d66fca56f54d16ecbdda6c63557e03250f6eadced3a4c505e7ef57@ec2-18-211-97-89.compute-1.amazonaws.com:5432/dbfrcg93g8kaj',
+        'PORT': '5432',
+    }
+}
 
 
 #DATABASES = {
@@ -141,7 +140,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
