@@ -1,0 +1,35 @@
+{% extends 'store/main.html' %}
+{% csrf_token %}
+
+{% block content %}
+
+  <div class="d-flex container justify-content-center", style="padding-top: 5%;">
+    <div class="col-md-10" >
+      <div class="d-flex ">
+        <h2>{{profile.user.username}}'s Profile Page</h2>
+        <a href="{% url 'profile_update' %}" class='ml-3'>Edit profile</a>
+      </div>
+      <hr /> 
+      <div style="flex:1"><strong>First name: </strong>{{profile.user.first_name}}</div>
+      <div style="flex:1"><strong>Last name: </strong>{{profile.user.last_name}}</div>
+      <div style="flex:1"><strong>Phone number: </strong>{{profile.user.phone_number}}</div>
+      <div style="flex:1"><strong>Location: </strong>{{profile.location}}</div>
+      <div style="flex:1"><strong>Transaction made: </strong>{{profile.transations}}</div>
+      <div style="flex:1"><strong>In site since: </strong>{{profile.user.date_joined|date:"F d, Y"}}</div>
+      <hr/>
+
+			<div class="">
+      <h5>My bio</h5>
+      <p class="lead">{{profile.bio}}</p>
+
+      <h6>Here will the list of order/transactions that user made</h6>
+    </div> 
+
+    <div>
+
+      <a class="btn btn-outline-dark" style="margin-top: 5em;" href="{% url 'store' %}">&#x2190; Back to Shopping</a>
+    </div>
+
+  </div>
+
+{% endblock content %}

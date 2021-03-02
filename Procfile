@@ -1,0 +1,1 @@
+web: gunicorn --pythonpath mini_shop_v1 mini_shop.wsgi --log-file -

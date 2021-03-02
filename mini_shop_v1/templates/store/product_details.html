@@ -1,0 +1,53 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+<a  class="btn btn-outline-dark" href="{% url 'by_category' category_id=product.category.id %}">&#x2190; Back to products of this category</a>
+
+<br>
+<br>
+
+<div class="container-fluid">
+
+	<div class="row extra_margin">
+		<div class="col-md-4 col-sm-12 col-xs-12" style="padding-left: 0; padding-top: 50px;">
+	
+			<div class="text-center">
+				<a href="{{product.imageURL}}">
+					<img src="{{product.imageURL}}" class="img-thumbnail"/>
+				</a>	
+
+				<p style="padding-top: 5px;">
+					<a class="btn btn-primary btn-xs" href="https://www.mercedes-benz.com/en/vehicles/passenger-cars/" role="button">Learn more about the product from the Web</a>
+				</p>
+	
+			</div>
+	
+		</div> 
+
+		<div class="col-md-8 col-sm-* col-xs-*">
+			<div>
+			<h2>{{product.name}}</h2>
+			<hr />
+				<div class="col">
+				<div style="flex:2"><strong>Item ID: </strong>{{product.id}}</div>
+				<div style="flex:1"><strong>Item Name: </strong>{{product.name}}</div>
+				<div style="flex:1"><strong>Item Color: </strong>{{product.color}}</div>
+				<div style="flex:1"><strong>Item Price: </strong> ${{product.price|floatformat:2}}</div>
+				<div style="flex:1"><strong>Item Category: </strong>{{product.category.name}}</div>
+				</div>
+				<hr/>
+			</div>
+			
+			<h4>More Description:</h4>
+			<p>
+				Vestibulum ac dui ut arcu pulvinar aliquet. In hac habitasse platea dictumst. Fusce porttitor at quam sit amet placerat. Phasellus placerat nunc vitae enim bibendum interdum. Nunc dapibus nisi a leo tincidunt, vitae dapibus nulla pretium.
+			</p>
+			<button data-product="{{product.id}}" data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+
+		</div> 
+  
+</div> 
+
+
+{% endblock content %}
