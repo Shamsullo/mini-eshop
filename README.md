@@ -5,7 +5,7 @@ This is the test asignment giver by Sunrise Studio Pro (www.sunrisestudio.pro) f
 
 Superuser cridentials for testing:
 
-  Username: Shmas
+  Username: Shmas.  
   Password: 1234
 
 All the requirements which were give can are in the 'mini_shop_v1'. In the'mini_shop_v2' I started building this assigment with RESP API, so you as it is just started you can ignore it for now.
@@ -39,5 +39,5 @@ Please contact me if any clarification is needed
 ```bash
 Email: ismatov_s@auca.kg,
 Phone number: +996 555 126012 (WhatsApp, Telegram)
-```bash
+```
 
