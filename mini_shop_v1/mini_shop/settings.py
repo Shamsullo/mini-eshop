@@ -88,10 +88,10 @@ WSGI_APPLICATION = 'mini_shop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ec2-18-211-97-89.compute-1.amazonaws.com',
+        'NAME': 'dbfrcg93g8kaj',
         'USER': 'xonjrkunkpxsyg',
         'PASSWORD': '9f55a99206d66fca56f54d16ecbdda6c63557e03250f6eadced3a4c505e7ef57',
-        'HOST': 'postgres://xonjrkunkpxsyg:9f55a99206d66fca56f54d16ecbdda6c63557e03250f6eadced3a4c505e7ef57@ec2-18-211-97-89.compute-1.amazonaws.com:5432/dbfrcg93g8kaj',
+        'HOST': 'ec2-18-211-97-89.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
