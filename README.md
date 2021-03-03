@@ -1,5 +1,5 @@
 # mini-eshop
-This is the test asignment giver by Sunrise Studio Pro (www.sunrisestudio.pro) for a Django Backend Engineer position.
+This is the test asignment given by Sunrise Studio Pro (www.sunrisestudio.pro) for a Django Backend Engineer position.
 
 ### Find the live-demo of the project:  https://mini-estore.herokuapp.com/
 
@@ -8,7 +8,7 @@ Superuser cridentials for testing:
   Username: Shmas  
   Password: 1234
 
-All the requirements which were give can are in the 'mini_shop_v1'. In the'mini_shop_v2' I started building this assigment with RESP API, so you as it is just started you can ignore it for now.
+All the requirements which were give can are in the 'mini_shop_v1'. In the'mini_shop_v2' I started building this assigment with RESP API, so as it is just started you can ignore it for now.
 
 
 #### After cloning the project from Github, can follow these step to run the project in your computer locally.
